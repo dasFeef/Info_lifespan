@@ -11,6 +11,7 @@
 
      <!--home page js-->
      <script defer src="skeleton.js"></script>
+     <script defer src="colorTheme.js"></script>
      <script defer src="home.js"></script>
  
      <!--css-->
@@ -18,29 +19,43 @@
  
      <!--fonts-->
      <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Orbitron:400,600' rel='stylesheet' type='text/css'>
  
      <!--icons-->
      <script src="https://kit.fontawesome.com/ddcc34e64d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="home-body">
+
+
+
+
+    <div class="home-timer">
+        <div id="home-timer-countup">00:00:00:00</div>
+    </div>
+
+
+
+
+    <!--skeleton-->
+
     <div class="navbar" id="navbar">
         <div id="switch">
             <div id="switch-btn"></div>
             </div>
         <i class="fa-solid fa-bars" id="sidebar-btn"></i>
-        <p id="navbar-heading">LIFESPAN</p>
+        <p id="navbar-heading">#Elefant</p>
         <div id="navbar-toggle"></div>
         <div id="navbar-options"></div>
     </div>
 
     <div class="sidebar">
         <ul id="sidebar-list">
-            <li>ABENTEUER BEGINNEN</li>
-            <li>OUR MISSION</li>
+            <li>HOME</li>
+            <li data-path="hallo">ABOUT</li>
             <li>INSPIRATION</li>
-            <li>BORED?</li>
-            <li>HOW TO</li>
-            <li>QUELLENANGABE</li>
+            <li>MOTIVATION</li>
+            <li>UPDATE LOG</li>
+            <li>SOURCES</li>
         </ul>
     </div>
 
@@ -59,7 +74,5 @@
         <p id="footer-text-2">© Felix Hohmann, 2022</p>
 
     </div>
-
-    <div class="bodyfaker"></div>
 </body>
 </html>

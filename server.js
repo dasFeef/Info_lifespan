@@ -7,10 +7,11 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join('./app')));
 
 
-app.get(['/', '/startup'], (req, res) =>{
+app.get(['/', '/about'], (req, res) =>{
     res.render('index');
 })
 
 app.get('/home', (req, res) => {
     res.render('home')
 })
+
