@@ -26,16 +26,6 @@
 </head>
 <body id="home-body">
 
-
-
-
-    <div class="home-timer">
-        <div id="home-timer-countup">00:00:00:00</div>
-    </div>
-
-
-
-
     <!--skeleton-->
 
     <div class="navbar" id="navbar">
@@ -50,18 +40,17 @@
 
     <div class="sidebar">
         <ul id="sidebar-list">
-            <li>HOME</li>
-            <li data-path="hallo">ABOUT</li>
-            <li>INSPIRATION</li>
-            <li>MOTIVATION</li>
-            <li>UPDATE LOG</li>
-            <li>SOURCES</li>
+            <li data-path="home">HOME</li>
+            <li data-path="about">ABOUT</li>
+            <li data-path="ispiration">INSPIRATION</li>
+            <li data-path="motivation">MOTIVATION</li>
+            <li data-path="updates">UPDATE LOG</li>
+            <li data-path="sources">SOURCES</li>
         </ul>
     </div>
 
-    <div class="footer" id="footer">
+    <div class="footer" id="home-footer">
         <p id="footer-text-1">The following ressources were used while building this site</p>
-
         <div class="footer-ressources">
             <a href="https://jquery.com" id="footer-res1">jQuery</a>
             <a href="https://fontawesome.com" id="footer-res2">Font Awsome</a>
@@ -72,7 +61,18 @@
         </div>
 
         <p id="footer-text-2">© Felix Hohmann, 2022</p>
+    </div>
 
+    <!--/home-->
+
+    <div class="home-timer">
+        <div id="home-timer-countup">00:00:00:00</div>
+    </div>
+
+    <div class="home-data">
+        <div class="home-data-field">
+            <span id="home-data-field-bananas-text"> This year, <p id="home-data-field-bananas-value">100</p> bananas have been eaten</span>
+        </div>
     </div>
 </body>
 </html>

@@ -39,5 +39,6 @@ async function addSidebar(){
 const navPaths = $("#sidebar-list"); 
 
 navPaths.click((e) => {
-    console.log(e.target.attributes['data-path'].value)
+    let path = e.target.attributes['data-path'].value; 
+    window.location.replace(path);
 })

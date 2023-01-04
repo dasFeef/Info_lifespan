@@ -327,6 +327,10 @@ body{
     background-image: none;
 }
 
+#home-footer{
+    top: 180vh;
+}
+
 .home-timer{
     z-index: 4;
     position: absolute;
@@ -371,4 +375,24 @@ body{
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     font-size: 8vh;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.home-data{
+    position: relative;
+
+    height: 140vh;
+    width: 90vw;
+
+    top: 25vh;
+    left: 5vw;
+
+    background-color: white;
+
 }
