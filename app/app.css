@@ -10,14 +10,6 @@
     --themeToggle-offset-light: calc(100% - 41% - 2px);
     --themeToggle-color-dark: #307f69; 
     --themeToggle-color-light: #77EFA5; 
-
-    --theme-background-light: white; 
-    --theme-gradient-light: white;
-    --theme-color-light: white;
-
-    --theme-background-dark: white;
-    --theme-gradient-dark: white;
-    --theme-color-dark: white;
 }
 
 /* BACKGRROUND */
@@ -109,7 +101,7 @@ body{
 /* SIDEBAR */ 
 
 .sidebar{
-    z-index: 4;
+    z-index: 5;
     height: 60vh; 
     width: 17vw; 
     display: none;
@@ -269,9 +261,9 @@ body{
     font-size: 3vh;
     text-align: center;
     position: absolute; 
-    top: 15vh; 
+    top: 8vh; 
     color: white;
-    padding: 4vh 4vw;
+    padding: 8vh 8vw;
 }
 
 #index-aboutSection-text-2, #index-aboutSection-text-3, #index-aboutSection-text-4{
@@ -299,6 +291,7 @@ body{
 .index-aboutSection-btn:hover{
     transform: scale(1.25); 
     color: white; 
+    cursor: pointer;
 }
 
 #index-aboutSection-btn-toRight{
@@ -316,11 +309,14 @@ body{
 
 #home-body{
     background-image: none;
-    background-color: #16191d;
 }
 
 .home-body-light{
-    background-color: aliceblue;
+    background-color: white;
+}
+
+.home-body-dark{
+    background-color: #16191d;
 }
 
 #home-bodyfaker{
@@ -334,36 +330,21 @@ body{
 .home-timer{
     z-index: 4;
     position: absolute;
+
     top: 11vh;
     left: 10vw;
     
     width: 80vw;
     height: 20vh;
 
+    color: white;
     background-color: #000111;
     border-radius: 1vh;
 }
 
-.home-timer-switch{
-    z-index: 5;
-    width: 50%;
-    height: 30%;
-
-    background-color: #00011A;
-
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 5vh;
-    justify-items: center;
-    align-items: center;
-}
-
-#home-timer-switch-btn{
-    z-index: 6;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+.home-timer-light{
+    background-color: #f5f5f7;
+    color: black;
 }
 
 #home-timer-countup{
@@ -371,7 +352,6 @@ body{
     text-align: center;
     top: 5vh;
 
-    color: white;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     font-size: 8vh;
@@ -387,12 +367,199 @@ body{
 .home-data{
     position: relative;
 
-    height: 140vh;
+    height: 130vh;
     width: 90vw;
 
     top: 25vh;
     left: 5vw;
 
-    background-color: white;
+    background-color: #000111;
+    border-radius: 30px;
+}
 
+.home-data-light{
+    background-color: #f5f5f7;
+}
+
+.home-data-field{
+    display: inline-block;
+    position: absolute;
+
+    top: 2%;
+
+    height: 21%; 
+    width: 17.6%;
+
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-data-desc{
+    margin-top: 6vh;
+    display: none;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+    background-color: rgba(0, 1, 17, .8);
+    border-radius: 20px;
+    padding: 10px;
+}
+.home-data-desc-show{
+    display: block;
+}
+.home-data-stat{
+    position: relative;
+    top: 9vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 8vh;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    background-color: rgba(0, 1, 17, .8);
+    color: white;
+    border-radius: 20px;
+}
+
+.home-data-field-light{
+    background-color: rgba(245, 245, 247, .65) ; 
+    color: black !important; 
+}
+
+#home-data-field-banana{
+    margin-left: 2%;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718_960_720.jpg");
+}
+
+#home-data-field-trees{
+    margin-left: 21.6%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-animals{
+    margin-left: 41.2%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-stars{
+    margin-left: 60.8%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-walking{
+    margin-left: 80.4%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-lightspeed{
+    top: 25%;
+    margin-left: 2%;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718_960_720.jpg");
+}
+
+#home-data-field-peopleBorn{
+    top: 25%;
+    margin-left: 21.6%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-peopleDied{
+    top: 25%;
+    margin-left: 41.2%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-eartsEnd{
+    top: 25%;
+    margin-left: 60.8%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-lifetime{
+    top: 25%;
+    margin-left: 80.4%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-houses{
+    top: 48%;
+    margin-left: 2%;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718_960_720.jpg");
+}
+
+#home-data-field-tweets{
+    top: 48%;
+    margin-left: 21.6%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-youtubeWatches{
+    top: 48%;
+    margin-left: 41.2%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-calls{
+    top: 48%;
+    margin-left: 60.8%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-reading{
+    top: 48%;
+    margin-left: 80.4%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-x1{
+    top: 71%;
+    margin-left: 2%;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718_960_720.jpg");
+}
+
+#home-data-field-x2{
+    top: 71%;
+    margin-left: 21.6%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-x3{
+    top: 71%;
+    margin-left: 41.2%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-x4{
+    top: 71%;
+    margin-left: 60.8%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+#home-data-field-x5{
+    top: 71%;
+    margin-left: 80.4%; 
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
+}
+
+.home-data-field:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.home-data-text{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+    position: relative;
+    top: 95%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }

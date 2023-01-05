@@ -1,4 +1,4 @@
-const timer = $("#home-timer-countup"); 
+const countup = $("#home-timer-countup"); 
 
 let seconds = 0;
 let minutes = 0; 
@@ -17,7 +17,7 @@ function updateTimer(){
     if(minutes == 60) minutes = 0, hours++; 
     if(hours == 24) hours = 0, days++;
 
-    timer.text(() => {
+    countup.text(() => {
         if(!days) time_d = '00'
         else if(days < 10) time_d = `0${days}`
         else{time_d = days}
@@ -38,16 +38,16 @@ function updateTimer(){
     });
 }      
 
-let data = {
-    bananas_eaten: {
+let dataset = {
+    banana: {
         value: 0, 
         res: (val) => {return val + 12}
     }, 
-    hogs_slain: {
+    trees: {
         value: 236363, 
         res: (val) => {return Math.round(val + (val * 0.01))}
     },
-    trees_cut: {
+    animals: {
         value: 0, 
         res: (val) => {return val + 486}
     }
@@ -55,19 +55,47 @@ let data = {
 
 
 function updateData(){
-    
-    //data['bananas_eaten'].value = data['bananas_eaten'].res(data['bananas_eaten'].value)
-    //console.log(data['bananas_eaten'].value)
 
-    for(let i = 0; i < Object.keys(data).length; i++){
-        data[Object.keys(data)[i]].value = data[Object.keys(data)[i]].res(data[Object.keys(data)[i]].value); 
-        console.log(data[Object.keys(data)[i]].value)
+    for(let i = 0; i < Object.keys(dataset).length; i++){
+        dataset[Object.keys(dataset)[i]].value = dataset[Object.keys(dataset)[i]].res(dataset[Object.keys(dataset)[i]].value); 
+        let value = dataset[Object.keys(dataset)[i]].value; 
+        let stat = Object.keys(dataset)[i]; 
+        let field = $(`#home-data-stat-${stat}`);
+        field.text(()=>{return value})
     }
-    /*
-    for(let i = 0; i < Object.keys(values).length; i++){
-        let res = results[Object.keys(values)[i]]
-        values[Object.keys(values)[i]] = res; 
-        console.log(values)
-        console.log(res)
-    }*/
+
 }
+
+
+//Data field clicks 
+let displayDesc; 
+
+const dataField = $(".home-data-field"); 
+
+dataField.on("mouseenter", (e) => {
+    let stat = e.target.attributes['data-stat'].value;
+    let statValue = $(`#home-data-stat-${stat}`);
+    let statDesc = $(`#home-data-desc-${stat}`);
+    statValue.css("transform", "translateY(-9vh)"); 
+
+    displayDesc = setTimeout(() => {
+       statDesc.addClass("home-data-desc-show");
+    }, 200);
+    console.log(`Entered on ${stat}`);
+})
+    
+
+dataField.on("mouseleave", (e) => {
+    clearTimeout(displayDesc);
+    let stat = e.target.attributes['data-stat'].value;
+    let statValue = $(`#home-data-stat-${stat}`);
+    let statDesc = $(`#home-data-desc-${stat}`);
+    statDesc.removeClass("home-data-desc-show");
+    statValue.css("transform", "translateY(0vh)");
+    console.log(`Left off ${stat}`);
+})
+
+dataField.click((e) => {
+    let link = e.target.attributes['data-source'].value;
+    window.open(link);
+})

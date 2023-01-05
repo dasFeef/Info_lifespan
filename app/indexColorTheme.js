@@ -1,39 +1,10 @@
-// Assign colors
-const colorThemes = ['dark', 'light'];
-const root = $(":root"); 
-
-const page = 'index'; 
-let theme = 'light'; 
-
-const pageThemes = {
-    index: {
-        light: {
-            background: () => {root.css("var(--theme-background-light), red")},
-        }
-    }, 
-    home: {
-
-    }
-}
-
-assignColors();
-
-function assignColors(){
-    for(let i = 0; i < Object.keys(pageThemes[page][theme]).length; i++){
-            console.log(Object.keys(pageThemes[page][theme])[i]); 
-    }
-}
-
-
-
-
-
 //Brightness modes 
 const darkOverlay = $(".bodyfaker");
 const themeToggle = $("#switch-btn");
+const colorThemes = ['dark', 'light'];
 
 //Load brightness
- theme = localStorage.getItem("view_brightness");
+theme = localStorage.getItem("view_brightness");
 if(!colorThemes.includes(theme)) localStorage.setItem("view_brightness", "dark"), theme = 'dark';
 
 //Load initial theme
