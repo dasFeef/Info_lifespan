@@ -94,8 +94,3 @@ dataField.on("mouseleave", (e) => {
     statValue.css("transform", "translateY(0vh)");
     console.log(`Left off ${stat}`);
 })
-
-dataField.click((e) => {
-    let link = e.target.attributes['data-source'].value;
-    window.open(link);
-})
