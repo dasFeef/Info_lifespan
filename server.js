@@ -2,16 +2,28 @@ const express = require("express");
 const app = express(); 
 const path = require('path');
 
+const german = require("./langs/german");
+const english = require("./langs/english");
+const { nextTick } = require("process");
+console.log(german.hello)
+
 app.listen(3000); 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join('./app')));
 
 
-app.get(['/', '/about'], (req, res) =>{
-    res.render('index');
+app.get(['/', '/de', '/de/about'], (req, res) => {
+    res.render('index', german);
 })
 
-app.get('/home', (req, res) => {
-    res.render('home')
+app.get(['/en', '/en/about'], (req, res) => {
+    res.render('index', english);
 })
 
+app.get(['/home', '/de/home'], (req, res) => {
+    res.render('home', german)
+})
+
+app.get(['/en/home'], (req, res) => {
+    res.render('home', english)
+})

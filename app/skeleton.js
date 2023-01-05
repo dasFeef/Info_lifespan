@@ -40,5 +40,18 @@ const navPaths = $("#sidebar-list");
 
 navPaths.click((e) => {
     let path = e.target.attributes['data-path'].value; 
-    window.location.replace(path);
+    let url = window.location.href; 
+    let lang = localStorage.getItem("system_lang"); 
+
+    if(!lang) localStorage.setItem("system_lang", "de");
+    if(lang == 'de'){
+        if(!url.includes('/de')) window.location = `/de/${path}`;
+        else window.location = path; 
+    }
+
+    if(lang == 'en'){   
+        if(!url.includes('/en3')) window.location = `/en/${path}`;
+        else window.location = path; 
+    }
+
 })
