@@ -10,7 +10,7 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join('./app')));
 
 
-app.get(['/', '/de', '/de/about'], (req, res) => {
+app.get(['/', '/de', '/de/about', '/about'], (req, res) => {
     res.render('index', german);
 })
 
