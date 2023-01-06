@@ -41,16 +41,31 @@ function updateTimer(){
 let dataset = {
     banana: {
         value: 0, 
-        res: (val) => {return val + 12}
+        res: (val) => {return val + 3169}
     }, 
     trees: {
-        value: 236363, 
-        res: (val) => {return Math.round(val + (val * 0.01))}
+        value: 200, 
+        res: (val) => {return val + 317}
     },
     animals: {
         value: 0, 
-        res: (val) => {return val + 486}
-    }
+        res: (val) => {return val + 1}
+    }, 
+    stars: {
+        value: 0, 
+        res: (val) => {return val + 60}
+    }, 
+    walking: {
+        value: 0, 
+        res: (val) => {return val + 1}
+    }, 
+    lightspeed: {
+        value: 0, 
+        res: (val) => {
+            return Math.round((val + 0.299792) * 100) / 100
+        }
+    }, 
+    
 }
 
 
@@ -81,7 +96,6 @@ dataField.on("mouseenter", (e) => {
     displayDesc = setTimeout(() => {
        statDesc.addClass("home-data-desc-show");
     }, 200);
-    console.log(`Entered on ${stat}`);
 })
     
 
@@ -92,5 +106,4 @@ dataField.on("mouseleave", (e) => {
     let statDesc = $(`#home-data-desc-${stat}`);
     statDesc.removeClass("home-data-desc-show");
     statValue.css("transform", "translateY(0vh)");
-    console.log(`Left off ${stat}`);
 })

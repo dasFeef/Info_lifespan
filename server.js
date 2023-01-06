@@ -4,8 +4,6 @@ const path = require('path');
 
 const german = require("./langs/german");
 const english = require("./langs/english");
-const { nextTick } = require("process");
-console.log(german.hello)
 
 app.listen(3000); 
 app.set('view engine', 'ejs')

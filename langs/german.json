@@ -1,4 +1,46 @@
 {
-    "hello": "hallo", 
-    "elephant": "Elefant"
+    "sidebar_list_home": "ZUHAUSE",
+    "sidebar_list_about": "ÜBER",
+    "sidebar_list_inspiration": "INSPIRATION",
+    "sidebar_list_motivation": "MOTIVATION",
+    "sidebar_list_updates": "UPDATES",
+    "sidebar_list_sources": "QUELLEN",
+    
+    "index_aboutSection_headline" : "Über dieses Projekt:",
+    "index_aboutSection_text_1": "1",  
+    "index_aboutSection_text_2": "2", 
+    "index_aboutSection_text_3": "3", 
+    "index_aboutSection_text_4": "4", 
+
+    "footer_text_1": "Diese Seite verwendet folgende Materialien:",
+    
+
+
+    "home_data_desc_banana": "", 
+    "home_data_desc_trees": "", 
+    "home_data_desc_animals": "", 
+    "home_data_desc_stars": "", 
+    "home_data_desc_walking": "", 
+    "home_data_desc_lightspeed": "", 
+    "home_data_desc_peopleBorn": "", 
+    "home_data_desc_peopleDied": "", 
+    "home_data_desc_earthsEnd": "", 
+    "home_data_desc_lifetime": "", 
+    "home_data_desc_houses": "", 
+    "home_data_desc_tweets": "", 
+    "home_data_desc_youtubeWatches": "", 
+    "home_data_desc_calls": "", 
+    "home_data_desc_reading": "", 
+    "home_data_desc_x1": "", 
+    "home_data_desc_x2": "",
+    "home_data_desc_x3": "", 
+    "home_data_desc_x4": "", 
+    "home_data_desc_x5": "", 
+
+    "home_data_text": ""
+
+
+
+
+
 }

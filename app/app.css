@@ -406,6 +406,9 @@ body{
     background-color: rgba(0, 1, 17, .8);
     border-radius: 20px;
     padding: 10px;
+
+    position: relative;
+    margin-top: 10%;
 }
 .home-data-desc-show{
     display: block;
@@ -415,7 +418,7 @@ body{
     top: 9vh;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 8vh;
+    font-size: 6vh;
     text-align: center;
     transition: all .2s ease-in-out;
     background-color: rgba(0, 1, 17, .8);
@@ -456,7 +459,7 @@ body{
 #home-data-field-lightspeed{
     top: 25%;
     margin-left: 2%;
-    background-image: url("https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718_960_720.jpg");
+    background-image: url("https://pixabay.com/get/g615062f410b83edafc7c14bd6f8719e82af47ab840cb88364eb76d4fa64805d0433311b37a6f46e6457a96f7d41c7382f1452084940ffc5cd2ab1424e0c951c1cd8a6c80406068c2ce17e85223c1214f_640.jpg");
 }
 
 #home-data-field-peopleBorn{
@@ -471,7 +474,7 @@ body{
     background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
 }
 
-#home-data-field-eartsEnd{
+#home-data-field-earthsEnd{
     top: 25%;
     margin-left: 60.8%; 
     background-image: url("https://cdn.pixabay.com/photo/2017/06/13/18/40/log-2399680_960_720.jpg");
