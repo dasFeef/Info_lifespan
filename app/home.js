@@ -64,7 +64,8 @@ let dataset = {
         res: (val) => {
             return Math.round((val + 0.299792) * 100) / 100
         }
-    }, 
+    }
+
     
 }
 
