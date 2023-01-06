@@ -6,7 +6,6 @@ menuClick();
 function menuClick(){
     menu.click(() => {
         menu.off("click");
-        console.log("CLICK!");
         addSidebar();
     })
 }
@@ -14,9 +13,14 @@ function menuClick(){
 let sidebarIsOut = false; 
 async function addSidebar(){
 
-    if(!sidebarIsOut){
+    let width = window.innerWidth;
+    let offset_out = "0vw"; 
+    let offset_in = "-17vw"
+    console.log(width, width < 1250)
+    if(width < 1250) offset_out = "0vw", offset_in = "-40vw"
 
-        sidebar.show().animate({right: "0vw"}, 500); 
+    if(!sidebarIsOut){
+        sidebar.show().animate({right: offset_out}, 500);
         setTimeout(() =>{
             sidebar.css("position", "absolute");
             sidebarIsOut = true; 
@@ -25,7 +29,7 @@ async function addSidebar(){
     } 
     else {
 
-        sidebar.css("position", "fixed").animate({right: "-17vw"}, 500); 
+        sidebar.css("position", "fixed").animate({right: offset_in}, 500); 
         setTimeout(() => {
             sidebar.hide();
             sidebarIsOut = false; 

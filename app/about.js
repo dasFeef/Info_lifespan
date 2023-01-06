@@ -80,10 +80,3 @@ function rotateLeft(){
     }
     
 }
-
-/*
-window.scrollTo({
-    top: 500,
-    behavior: 'smooth'
-});
-*/
