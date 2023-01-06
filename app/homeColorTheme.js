@@ -12,9 +12,8 @@ if(!colorThemes.includes(theme)) localStorage.setItem("view_brightness", "dark")
 
 //Load initial theme
 themeToggleState(theme);
-
-
 toggleTheme();
+
 function toggleTheme(){
     if(theme == 'dark'){
         themeToggle.click(() => { 
@@ -46,7 +45,6 @@ function toggleTheme(){
 
 
 function themeToggleState(theme){
-
     themeToggle.show();
 
     if(theme == 'dark'){

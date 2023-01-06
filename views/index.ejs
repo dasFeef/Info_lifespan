@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>LIFESPAN</title>
+
+    <title>Lifespan</title>
+
+    <!--favicon-->
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <!--Jquery from cdn-->
@@ -25,7 +28,7 @@
     <script src="https://kit.fontawesome.com/ddcc34e64d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!--skeleton-->
     <div class="navbar" id="navbar">
         <div id="switch">
             <div id="switch-btn"></div>
@@ -36,17 +39,20 @@
         <div id="navbar-options"></div>
     </div>
 
-    <div class="sidebar">
+    <div class="sidebar noFocus">
         <ul id="sidebar-list">
             <li data-path="home"><%= sidebar_list_home%></li>
             <li data-path="about"><%= sidebar_list_about%></li>
-            <li data-path="ispiration"><%= sidebar_list_inspiration%></li>
+            <li data-path="github"><%= sidebar_list_github%></li>
+            <li data-path="sources"><%= sidebar_list_sources%></li>
+
+        <!--<li data-path="inspiration"><%= sidebar_list_inspiration%></li>
             <li data-path="motivation"><%= sidebar_list_motivation%></li>
             <li data-path="updates"><%= sidebar_list_updates%></li>
-            <li data-path="sources"><%= sidebar_list_sources%></li>
+        --> 
         </ul>
     </div>
-
+    <!--index-->
     <div class="index-aboutSection" id="index-aboutSection">
         <div class="index-aboutSection-btn" id="index-aboutSection-btn-toLeft">
             <i class="fa-solid fa-angle-left"></i>
@@ -65,21 +71,24 @@
         </div>
         
     </div>
-
-    <div class="footer" id="footer">
+    <!--skeleton-->
+    <div class="footer noFocus" id="footer">
         <p id="footer-text-1"><%= footer_text_1 %></p>
 
         <div class="footer-ressources">
             <a href="https://jquery.com" id="footer-res1">jQuery</a>
             <a href="https://fontawesome.com" id="footer-res2">Font Awsome</a>
-            <a href="https://google.com" id="footer-res3">Google Fonts</a>
-            <a href="https://google.com" id="footer-res1">EMPTY SLOT 3</a>
-            <a href="https://google.com" id="footer-res1">EMPTY SLOT 4</a>
-            <a href="https://google.com" id="footer-res1">EMPTY SLOT 5</a>
+            <a href="https://fonts.google.com" id="footer-res3">Google Fonts</a>
+            <a href="https://htmlcolorcodes.com/color-picker/" id="footer-res4">Color Picker</a>
+            <a href="https://stackoverflow.com" id="footer-res5">Stackoverflow</a>
         </div>
 
         <p id="footer-text-2">© Felix Hohmann, 2022</p>
 
+        <ul id="footer-langs">
+            <li><a href="/de/">Deutsch</a></li>
+            <li><a href="/en/">English</a></li>
+        </ul>
     </div>
 
     <div class="bodyfaker"></div>

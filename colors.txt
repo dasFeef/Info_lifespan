@@ -1,3 +1,0 @@
-background-color: #00011A; -> home-timer-switch
-
-background-color: #000111; -> home-timer

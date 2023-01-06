@@ -5,20 +5,14 @@ let displayedInfo = 1;
 
 aboutClick();
 function aboutClick(){
-
     aboutBtnL.click(() => {
-        
         if(displayedInfo == 1) displayedInfo = 4;
         else displayedInfo--;
-
-        console.log(displayedInfo)
         rotateLeft();
     });
-
     aboutBtnR.click(() => {
         if(displayedInfo == 4) displayedInfo = 1; 
         else displayedInfo++;
-        console.log(displayedInfo)
         rotateRight()
     });
 }
@@ -29,7 +23,6 @@ const infoText_3 = $("#index-aboutSection-text-3");
 const infoText_4 = $("#index-aboutSection-text-4");
 
 function rotateRight(){
-
     switch(displayedInfo){
         case(1):{
             infoText_4.hide(); 
@@ -55,7 +48,6 @@ function rotateRight(){
 }
 
 function rotateLeft(){
-
     switch(displayedInfo){
         case(1):{
             infoText_2.hide(); 

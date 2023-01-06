@@ -1,43 +1,57 @@
 {
-    "sidebar_list_home": "ZUHAUSE",
-    "sidebar_list_about": "ÜBER",
+    "sidebar_list_home": "START",
+    "sidebar_list_about": "ÜBER", 
+    "sidebar_list_github": "GITHUB",
+    "sidebar_list_sources": "QUELLEN",
     "sidebar_list_inspiration": "INSPIRATION",
     "sidebar_list_motivation": "MOTIVATION",
     "sidebar_list_updates": "UPDATES",
-    "sidebar_list_sources": "QUELLEN",
-    
-    "index_aboutSection_headline" : "Über dieses Projekt:",
-    "index_aboutSection_text_1": "1",  
-    "index_aboutSection_text_2": "2", 
-    "index_aboutSection_text_3": "3", 
-    "index_aboutSection_text_4": "4", 
 
-    "footer_text_1": "Diese Seite verwendet folgende Materialien:",
-    
+    "index_aboutSection_headline": "Über dieses Projekt:",
+    "index_aboutSection_text_1": "Ihre Lieferung kommt morgen. Ein Termin in einer Woce. In einem Jahr bin ich bereits 50 Jahre alt. Wenn ich in Rente bin, werde ich die Welt bereisen. Obwohl Zeit sicherlich die wichtigste Ressource ist, die wir besitzen, sehen wir die Zeit oft lediglich als Hindernis an, unsere Ziele zu erreichen. Und bevor wir es wissen, ist sie vergangen - die Zeit. Deswegen bin ich der Meinung, dass es gut tut, sich von Zeit zu Zeit zu vergegenwärtigen, wieviel unsere Lebenszeit eigentlich wert ist.",  
+    "index_aboutSection_text_2": "Klicke auf das Menü-Symbol oben rechts und suche 'START'. Wenn Du dann auf 'START' drückst, kann es losgehen. Ist Dir das Website-Design zu hell oder zu dunkel, kannst Du es mit dem Schalter oben links jederzeit ändern.", 
+    "index_aboutSection_text_3": "Bitte beachte, dass alle Berechnungen unter 'START' lediglich grobe Schätzungen sind, welche keine wissenschaftliche Relevanz bieten. Um mehr über Deine leiblingsthemen zu erfahren, kannst Du die 'QUELLEN' Seite besuchen. Die Quellen von 'START' sind in chronologischer Reihenfolge gelistet.", 
+    "index_aboutSection_text_4": "Auch Deine bevorzugte Sprache kannst Du Dir auswählen. Klicke dazu auf die Schaltfläche in der unteren rechten Ecke. Dort kannst Du außerdem eine Sammlung von äßerst nützlichen Ressourcen finden, die bei der Erstellung dieser Website verwendet wurden. Ich hoffe sehr, dass es Dir hier gefällt!", 
 
 
-    "home_data_desc_banana": "", 
-    "home_data_desc_trees": "", 
-    "home_data_desc_animals": "", 
-    "home_data_desc_stars": "", 
-    "home_data_desc_walking": "", 
-    "home_data_desc_lightspeed": "", 
-    "home_data_desc_peopleBorn": "", 
-    "home_data_desc_peopleDied": "", 
-    "home_data_desc_earthsEnd": "", 
-    "home_data_desc_lifetime": "", 
-    "home_data_desc_houses": "", 
-    "home_data_desc_tweets": "", 
-    "home_data_desc_youtubeWatches": "", 
-    "home_data_desc_calls": "", 
-    "home_data_desc_reading": "", 
-    "home_data_desc_x1": "", 
-    "home_data_desc_x2": "",
-    "home_data_desc_x3": "", 
-    "home_data_desc_x4": "", 
-    "home_data_desc_x5": "", 
+    "footer_text_1": "Die folgenden Ressourcen wurden beim Erstellen dieser Seite verwendet:", 
 
-    "home_data_text": ""
+
+
+    "home_data_desc_banana": "Bananen wurden, seit Du diese Seite besucht hast gegessen. Schätzungsweise 100 Milliarden Bananen werden jedes Jahr verzehrt.", 
+    "home_data_desc_trees": "Bäume wurden, seit Du diese Seite besucht hast, gefällt. Leider werden für jeden neu-gepflanzten Baum, drei weitere gefgällt.", 
+    "home_data_desc_searches": "Mal wurde eine Suchanfrage von Google verarbeitet. Somit kommen jedes Jahr mehr als 2 Billionen (2000 Millionen) Google-Suchen zusammen.", 
+    "home_data_desc_stars": "Tausend Sterne sind für uns jetzt nie wieder erreichbar - für immer. Das liegt daran, dass sie sich relativ zu uns schneller als Licht bewegen.", 
+    "home_data_desc_walking": "Meter ist die Distanz, die Du in dieser Zeit spazieren hättest können. Denke stets daran, deine 12.000 Schritte zu machen!", 
+    "home_data_desc_lightspeed": "Millionen Kilometer ist das Licht in dieser Zeit gereist. In einer einzigen Sekunde könnte das Licht die Erde achtmal umrunden.", 
+    "home_data_desc_peopleBorn": "Menschen wurden soeben geboren. Wundervoll! Übrigens: Die halben Menschen werden jene, die den 'Dark-Mode' nicht bevorzugen. Seltsame Leute...", 
+    "home_data_desc_peopleDied": "Menschen sind soeben gestorben. Und auch wenn der Tod sicherlich keine angenehme Angelegenheit in unserem Leben darstellt, ist er dennoch notwendig.", 
+    "home_data_desc_hheartbeats": "Mal hat das Herz eines Kolibris geschlagen. Allerdings können dessen Flügel 2-4 mal schneller als das schlagen.", 
+    "home_data_desc_timeLost": "Sekunden ist exakt die Zeit, die Du damit verschwendet hast, dich auf dieser Seite herumzutreiben.", 
+    "home_data_desc_secondsLeft": "Milliarden Sekunden sind noch übrig. Dannach wird die Sonne jegliches Wasser verdampfen lassen und Leben auf der Erde wird wieder unmöglich.", 
+    "home_data_desc_tweets": "Tweets wurden soeben gesendet. Bei circa 5000 Tweets die Sekunde besteht Grund zur Annahme, dass wirklich keiner gefragt hat.", 
+    "home_data_desc_youtubeWatches": "Videos wurden soeben auf YouTube angesehen. Das macht YouTube zur zweitgrößten Suchmaschiene der Welt.", 
+    "home_data_desc_earthTravels": "Kilometer hat sich die Erde um die Sonne gedreht.", 
+    "home_data_desc_reading": "Ist die Anzahl an Seiten eines nützlichen Buchs, dass Du hättest lesen können.", 
+    "home_data_desc_blinking": "Mal hast Du bereits geblinzelt and dass, ohne es zu bemerken.", 
+    "home_data_desc_pulse": "Mal hat Dein Herz geschlagen. Wollen wir hoffen, dass sich dieser Trend hält...",
+    "home_data_desc_debt": "Euro wurden zu deutschlands stetig wachsendem Schuldenberg hinzugefügt. Das sind über 30.000€ pro Kopf.", 
+    "home_data_desc_strikes": "Blitze haben in letzter Zeit die Erde getroffen. Allerdings ist davon auszugehen, dass keiner davon Dich erwischt hat.", 
+    "home_data_desc_phones": "Iphones wurden verkauft. In 2022 waren es somit mehr als 100 Millionen Stück.", 
+
+    "home_data_text": "Besuche die Quellen-Seite um mehr zu erfahren.", 
+
+
+    "sources_list_pictureText": "Klicke hier für das Bild",
+    "sources_list_sourceText": "Klicke hier für mehr informationen", 
+    "sources_list_headline": "START:",
+    "sources_fonts_headline": "FONTS:",
+    "sources_icons_headline": "ICONS:",
+    "sources_frameworks_headline": "FRAMEWORKS:",
+
+    "sources_fonts_lato": "Klicke hier um LATO zu finden",
+    "sources_fonts_orbitron": "Klicke hier um ORBITRON zu finden",
+    "sources_icons_fontawsome": "Fontawsome"
 
 
 

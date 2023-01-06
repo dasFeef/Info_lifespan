@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIFESPAN</title>
+
+    <title>Lifespan</title>
+
+    <!--favicon-->
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
-     <!--Jquery from cdn-->
-     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--Jquery from cdn-->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-     <!--home page js-->
-     <script defer src="../skeleton.js"></script>
-     <script defer src="../homeColorTheme.js"></script>
-     <script defer src="../home.js"></script>
- 
-     <!--css-->
-     <link rel="stylesheet" href="../app.css">
- 
-     <!--fonts-->
-     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-     <link href='https://fonts.googleapis.com/css?family=Orbitron:400,600' rel='stylesheet' type='text/css'>
- 
-     <!--icons-->
-     <script src="https://kit.fontawesome.com/ddcc34e64d.js" crossorigin="anonymous"></script>
+    <!--home page js-->
+    <script defer src="../skeleton.js"></script>
+    <script defer src="../homeColorTheme.js"></script>
+    <script defer src="../home.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="../app.css">
+
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,600' rel='stylesheet' type='text/css'>
+
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/ddcc34e64d.js" crossorigin="anonymous"></script>
 </head>
 <body id="home-body">
-
     <!--skeleton-->
-
     <div class="navbar" id="navbar">
         <div id="switch">
             <div id="switch-btn"></div>
@@ -39,21 +40,20 @@
         <div id="navbar-options"></div>
     </div>
 
-    <div class="sidebar">
+    <div class="sidebar noFocus">
         <ul id="sidebar-list">
             <li data-path="home"><%= sidebar_list_home%></li>
             <li data-path="about"><%= sidebar_list_about%></li>
-            <li data-path="ispiration"><%= sidebar_list_inspiration%></li>
+            <li data-path="github"><%= sidebar_list_github%></li>
+            <li data-path="sources"><%= sidebar_list_sources%></li>
+        <!--<li data-path="inspiration"><%= sidebar_list_inspiration%></li>
             <li data-path="motivation"><%= sidebar_list_motivation%></li>
             <li data-path="updates"><%= sidebar_list_updates%></li>
-            <li data-path="sources"><%= sidebar_list_sources%></li>
+        --> 
         </ul>
     </div>
-
-
     <!--/home-->
-
-    <div class="home-timer">
+    <div class="home-timer noFocus">
         <div id="home-timer-countup">00:00:00:00</div>
     </div>
 
@@ -68,9 +68,9 @@
             <div id="home-data-desc-trees" class="home-data-desc" data-stat="trees"><%= home_data_desc_trees %></div>
         </div> 
 
-        <div id="home-data-field-animals" class="home-data-field" data-stat="animals">
-            <p id="home-data-stat-animals" class="home-data-stat" data-stat="animals">0</p>
-            <div id="home-data-desc-animals" class="home-data-desc" data-stat="animals"><%= home_data_desc_animals %></div>
+        <div id="home-data-field-searches" class="home-data-field" data-stat="searches">
+            <p id="home-data-stat-searches" class="home-data-stat" data-stat="searches">0</p>
+            <div id="home-data-desc-searches" class="home-data-desc" data-stat="searches"><%= home_data_desc_searches %></div>
         </div>
 
         <div id="home-data-field-stars" class="home-data-field" data-stat="stars">
@@ -98,24 +98,24 @@
             <div id="home-data-desc-peopleDied" class="home-data-desc" data-stat="peopleDied"><%= home_data_desc_peopleDied %></div>
         </div>
 
-        <div id="home-data-field-earthsEnd" class="home-data-field" data-stat="earthsEnd">
-            <p id="home-data-stat-earthsEnd" class="home-data-stat" data-stat="earthsEnd">0</p>
-            <div id="home-data-desc-earthsEnd" class="home-data-desc" data-stat="earthsEnd"><%= home_data_desc_earthsEnd %></div>
+        <div id="home-data-field-hheartbeats" class="home-data-field" data-stat="hheartbeats">
+            <p id="home-data-stat-hheartbeats" class="home-data-stat" data-stat="hheartbeats">0</p>
+            <div id="home-data-desc-hheartbeats" class="home-data-desc" data-stat="hheartbeats"><%= home_data_desc_hheartbeats %></div>
         </div>
 
-        <div id="home-data-field-lifetime" class="home-data-field" data-stat="lifetime">
-            <p id="home-data-stat-lifetime" class="home-data-stat" data-stat="lifetime">0</p>
-            <div id="home-data-desc-lifetime" class="home-data-desc" data-stat="lifetime"><%= home_data_desc_lifetime%></div>
+        <div id="home-data-field-timeLost" class="home-data-field" data-stat="timeLost">
+            <p id="home-data-stat-timeLost" class="home-data-stat" data-stat="timeLost">0</p>
+            <div id="home-data-desc-timeLost" class="home-data-desc" data-stat="timeLost"><%= home_data_desc_timeLost %></div>
         </div>
 
-        <div id="home-data-field-houses" class="home-data-field" data-stat="houses">
-            <p id="home-data-stat-houses" class="home-data-stat" data-stat="houses">0</p>
-            <div id="home-data-desc-houses" class="home-data-desc" data-stat="houses"><%= home_data_desc_houses %></div>
+        <div id="home-data-field-secondsLeft" class="home-data-field" data-stat="secondsLeft">
+            <p id="home-data-stat-secondsLeft" class="home-data-stat" data-stat="secondsLeft">0</p>
+            <div id="home-data-desc-secondsLeft" class="home-data-desc" data-stat="secondsLeft"><%= home_data_desc_secondsLeft %></div>
         </div>
 
         <div id="home-data-field-tweets" class="home-data-field" data-stat="tweets">
             <p id="home-data-stat-tweets" class="home-data-stat" data-stat="tweets">0</p>
-            <div id="home-data-desc-tweets" class="home-data-desc" data-stat="tweets"><%= home_data_desc_tweets %>.</div>
+            <div id="home-data-desc-tweets" class="home-data-desc" data-stat="tweets"><%= home_data_desc_tweets %></div>
         </div> 
 
         <div id="home-data-field-youtubeWatches" class="home-data-field" data-stat="youtubeWatches">
@@ -123,9 +123,9 @@
             <div id="home-data-desc-youtubeWatches" class="home-data-desc" data-stat="youtubeWatches"><%= home_data_desc_youtubeWatches %></div>
         </div>
 
-        <div id="home-data-field-calls" class="home-data-field" data-stat="calls">
-            <p id="home-data-stat-calls" class="home-data-stat" data-stat="calls">0</p>
-            <div id="home-data-desc-calls" class="home-data-desc" data-stat="calls"><%= home_data_desc_calls %></div>
+        <div id="home-data-field-earthTravels" class="home-data-field" data-stat="earthTravels">
+            <p id="home-data-stat-earthTravels" class="home-data-stat" data-stat="earthTravels">0</p>
+            <div id="home-data-desc-earthTravels" class="home-data-desc" data-stat="earthTravels"><%= home_data_desc_earthTravels %></div>
         </div>
 
         <div id="home-data-field-reading" class="home-data-field" data-stat="reading">
@@ -133,47 +133,50 @@
             <div id="home-data-desc-reading" class="home-data-desc" data-stat="reading"><%= home_data_desc_reading %></div>
         </div>
 
-        <div id="home-data-field-x1" class="home-data-field" data-stat="x1">
-            <p id="home-data-stat-x1" class="home-data-stat" data-stat="x1">0</p>
-            <div id="home-data-desc-x1" class="home-data-desc" data-stat="x1"><%= home_data_desc_x1 %></div>
+        <div id="home-data-field-blinking" class="home-data-field" data-stat="blinking">
+            <p id="home-data-stat-blinking" class="home-data-stat" data-stat="blinking">0</p>
+            <div id="home-data-desc-blinking" class="home-data-desc" data-stat="blinking"><%= home_data_desc_blinking %></div>
         </div>
 
-        <div id="home-data-field-x2" class="home-data-field" data-stat="x2">
-            <p id="home-data-stat-x2" class="home-data-stat" data-stat="x2">0</p>
-            <div id="home-data-desc-x2" class="home-data-desc" data-stat="x2"><%= home_data_desc_x2 %></div>
+        <div id="home-data-field-pulse" class="home-data-field" data-stat="pulse">
+            <p id="home-data-stat-pulse" class="home-data-stat" data-stat="pulse">0</p>
+            <div id="home-data-desc-pulse" class="home-data-desc" data-stat="pulse"><%= home_data_desc_pulse %></div>
         </div> 
 
-        <div id="home-data-field-x3" class="home-data-field" data-stat="x3">
-            <p id="home-data-stat-x3" class="home-data-stat" data-stat="x3">0</p>
-            <div id="home-data-desc-x3" class="home-data-desc" data-stat="x3"><%= home_data_desc_x3 %></div>
+        <div id="home-data-field-debt" class="home-data-field" data-stat="debt">
+            <p id="home-data-stat-debt" class="home-data-stat" data-stat="debt">0</p>
+            <div id="home-data-desc-debt" class="home-data-desc" data-stat="debt"><%= home_data_desc_debt %></div>
         </div>
 
-        <div id="home-data-field-x4" class="home-data-field" data-stat="x4">
-            <p id="home-data-stat-x4" class="home-data-stat" data-stat="x4">0</p>
-            <div id="home-data-desc-x4" class="home-data-desc" data-stat="x4"><%= home_data_desc_x4 %></div>
+        <div id="home-data-field-strikes" class="home-data-field" data-stat="strikes">
+            <p id="home-data-stat-strikes" class="home-data-stat" data-stat="strikes">0</p>
+            <div id="home-data-desc-strikes" class="home-data-desc" data-stat="strikes"><%= home_data_desc_strikes %></div>
         </div>
 
-        <div id="home-data-field-x5" class="home-data-field" data-stat="x5">
-            <p id="home-data-stat-x5" class="home-data-stat" data-stat="x5">0</p>
-            <div id="home-data-desc-x5" class="home-data-desc" data-stat="x5"><%= home_data_desc_x5 %></div>
+        <div id="home-data-field-phones" class="home-data-field" data-stat="phones">
+            <p id="home-data-stat-phones" class="home-data-stat" data-stat="phones">0</p>
+            <div id="home-data-desc-phones" class="home-data-desc" data-stat="phones"><%= home_data_desc_phones %></div>
         </div>
 
-        <div class="home-data-text"><%= home_data_text %></div>
+        <div class="home-data-text noFocus"><%= home_data_text %></div>
     </div>
-
-    <div class="footer" id="home-footer">
+    <!--skeleton-->
+    <div class="footer noFocus" id="home-footer">
         <p id="footer-text-1"><%= footer_text_1 %></p>
         <div class="footer-ressources">
             <a href="https://jquery.com" id="footer-res1">jQuery</a>
             <a href="https://fontawesome.com" id="footer-res2">Font Awsome</a>
-            <a href="https://google.com" id="footer-res3">Google Fonts</a>
-            <a href="https://google.com" id="footer-res1">EMPTY SLOT 3</a>
-            <a href="https://google.com" id="footer-res1">EMPTY SLOT 4</a>
-            <a href="https://google.com" id="footer-res1">EMPTY SLOT 5</a>
+            <a href="https://fonts.google.com" id="footer-res3">Google Fonts</a>
+            <a href="https://htmlcolorcodes.com/color-picker/" id="footer-res4">Color Picker</a>
+            <a href="https://stackoverflow.com" id="footer-res5">Stackoverflow</a>
         </div>
 
         <p id="footer-text-2">© Felix Hohmann, 2022</p>
+
+        <ul id="footer-langs">
+            <li><a href="/de/home">Deutsch</a></li>
+            <li><a href="/en/home">English</a></li>
+        </ul>
     </div>
-    
 </body>
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>Lifespan</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+
+    <!--Jquery from cdn-->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!--index page js-->
+    <script defer src="../skeleton.js"></script>
+    <script defer src="../homeColorTheme.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="../app.css">
+
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/ddcc34e64d.js" crossorigin="anonymous"></script>
+</head>
+<body id="home-body" class="noFocus">
+    <!--skeleton-->
+    <div class="navbar" id="navbar">
+        <div id="switch">
+            <div id="switch-btn"></div>
+            </div>
+        <i class="fa-solid fa-bars" id="sidebar-btn"></i>
+        <p id="navbar-heading">LIFESPAN</p>
+        <div id="navbar-toggle"></div>
+        <div id="navbar-options"></div>
+    </div>
+
+    <div class="sidebar">
+        <ul id="sidebar-list">
+            <li data-path="home"><%= sidebar_list_home%></li>
+            <li data-path="about"><%= sidebar_list_about%></li>
+            <li data-path="github"><%= sidebar_list_github%></li>
+            <li data-path="sources"><%= sidebar_list_sources%></li>
+
+        <!--<li data-path="inspiration"><%= sidebar_list_inspiration%></li>
+            <li data-path="motivation"><%= sidebar_list_motivation%></li>
+            <li data-path="updates"><%= sidebar_list_updates%></li>
+        --> 
+        </ul>
+    </div>
+    <!--sources-->
+    <div id="sources-list-1" class="sources-list">
+        <p class="sources-heading"><%= sources_list_headline %> </p>
+        <p>1)</p>
+        <ul>
+            <li>image:  <a href="https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718_960_720.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.fao.org/economic/est/est-commodities/oilcrops/bananas/bananafacts/en/"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>2)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/gbc0cc0723b8bfef4b14068d1055fad07f437b550483621ada7de435e99d0770e3f4d261b76f6a5157ffce8d04c421ee67125a4b49198e7b3a232b667c36d431f80d461f992a83764dfe2ef9e492cff7b_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://tree-nation.com/de/projekte/inside-tree-nation/artikel/9739-how-many-trees-are-lost-to-deforestation-every-year"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>3)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/gbea0d09039f4345ad05c53b76c88ab26b8d25b9ec42ffecaaf3748436be36d418f6f02aaa49af6b56b8822b6a60efa132af661ab2694fddc709bf019636522bb081fb86b4f961c4a34da0151bc9eaa5b_640.png"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://seotribunal.com/blog/how-many-google-searches-per-day/"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>4)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g439227555d90b9f022eb99c28cd41df0b52f6273c536a35050295379fe80dba7266178394cde05336eaeecc3d67cf18214237a818077d6d370ef7476080f332aa8521c3b9184b042ecedbf109cbf9eb6_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.forbes.com/sites/startswithabang/2018/05/12/ask-ethan-how-many-galaxies-have-already-disappeared-from-our-perspective/"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>5)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/gb050f75d716c4ee86154c9abe260ef4b21040524280900fa9628502fb3d5cee8b9f746ff249f149260379008f5f665e43ce3a3919b916749e5f8bb40cc11e9ed8c003f7160666f151bdbf202b396ed35_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.lzg.nrw.de/_php/login/dl.php?u=/_media/pdf/ges_foerd/bewegungsfoerderung/faktenblaetter/spazieren_walken_joggen_faktenblatt_lzg-nrw.pdf"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>6)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g615062f410b83edafc7c14bd6f8719e82af47ab840cb88364eb76d4fa64805d0433311b37a6f46e6457a96f7d41c7382f1452084940ffc5cd2ab1424e0c951c1cd8a6c80406068c2ce17e85223c1214f_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://de.wikipedia.org/wiki/Lichtgeschwindigkeit"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>7)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/gca95f6e876dde92ff3722ed7af9630be7092f7014fa7cda2074370711cc118176965f0f3f3a75cd001e444a99d5a1fbf20bca16f1c1b0bea31f448293f0562ab82700935fb1d9e93f6bcace10ea96524_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.theworldcounts.com/stories/how-many-babies-are-born-each-day"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>8)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g706e1716573d4d41cfb55fa7e8f0bd9f82e1bcbb1638bf26b09747157e00bc98b29976b9159fc4887f561c3edbca96993034cd080e62d0870ce175048a54df29dda397004544a9bf3130d965dc33f1b1_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.medindia.net/patients/calculators/world-death-clock.asp"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>9)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g02a339df607a35a99e93daa061e09ec0b1b10b666f0d5f1fc4d3aaf9b000a32bdb9d06a8c39d7851f957be69607de8b169ae01f642e26f00746f616880cb2bfc80a6d19aef7b1ec1115fd427d04a8f62_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.thespruce.com/fun-facts-about-hummingbirds-387106"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>10)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g17b3950ac39e41125007aca851638da19231cfd481e470a38ccc92f810637deb35cd0c357d097a9d57b2ede69d309fedb207b1067f9f9c728c0509012e477c44659775899fad0e4c518634318f5f3048_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="home"><%= sources_list_sourceText %></a></li>
+        </ul>
+    </div>
+    <div id="sources-list-2" class="sources-list">
+    <p>11)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g8df673025dcd0386156fbcb9819a72232e422cd861f86477198339f687f87079f360aa2bb27559dc79e5680ef9e95418de98ac5b9aede16cae8117ed3c1d99fb70e9c2f1b99070d75c3703ba53f71a20_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.science.org/content/article/earth-wont-die-soon-thought"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>12)</p>
+        <ul>
+            <li>image: <a href="https://www.tagesschau.de/multimedia/bilder/twitter-237~_v-original.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.internetlivestats.com/twitter-statistics/"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>13)</p>
+        <ul>
+            <li>image: <a href="https://image.cnbcfm.com/api/v1/image/106714149-1600871842820-gettyimages-1063528748-181119_TFEA_PHT01.jpeg?v=1626718712"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.comparitech.com/tv-streaming/youtube-statistics/"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>14)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g578da32b97b306cbf7f999a7b241db2436bb2fc780ceae930694f6e13995ddb6197547bc9d8f878aa4ee2e926b1de9405a1921a2204ec87c573a62419aa0f3077c0189929f9bd427cece9b3df006b90b_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.space.com/33527-how-fast-is-earth-moving.html"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>15)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/g586c96e419fb27b4effec288d4cb68b8671db434753bbabeb107239b7e6f3246f1b49fc9c39b117ae9c3b9fbfa5d79be1b8ce2a49ac02c6e142bcae49ad97d796455b5d37fd65ff5aca5c79ddff9f55c_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.linkedin.com/pulse/how-fast-considered-speed-reading-quick-facts-paul-nowak"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>16)</p>
+        <ul>
+            <li>image: <a href="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL25vdy0wNjZhM2ZkOS00MjQ4LTQyN2EtOGExZi1mMWYxNTVhZmM2YjAtMTIxMC02ODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0="><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.healthline.com/health/how-many-times-do-you-blink-a-day#blinking-frequency"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>17)</p>
+        <ul>
+            <li>image: <a href="https://img.freepik.com/premium-vector/ecg-heartbeat-monitor-cardiogram-heart-pulse-line-wave-electrocardiogram-medical-background_41737-781.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.herzstiftung.de/ihre-herzgesundheit/das-herz/welcher-puls-ist-normal"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>18)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/gde1a4d78ef3af32ad1e94a2ccc18d8a2a1fdf8c86ad03b5256a28024cab30dc64b40c695caaaca3fec9ed1d529493e141f5da14699f0d180134ace2dcdc777cb15879566bb93626a5dab321b3cc1751d_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.gold.de/staatsverschuldung-deutschland/#berechnung"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>19)</p>
+        <ul>
+            <li>image: <a href="https://pixabay.com/get/gee93903b82e0d89007b62155fe1cd00fb3419c2b24ec6fbc600e1fc02a427c0cfbfa5456a4a1ff2d4461afaa4b059c677ef7d0177f54124f5d2af75ecf86d913e11f00b2094b2bd3cd7091aad7ea4014_640.jpg"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.nationalgeographic.com/environment/article/lightning"><%= sources_list_sourceText %></a></li>
+        </ul>
+        <p>20)</p>
+        <ul>
+            <li>image: <a href="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617539"><%= sources_list_pictureText %></a></li>
+            <li>source: <a href="https://www.statista.com/statistics/299153/apple-smartphone-shipments-worldwide/"><%= sources_list_sourceText %></a></li>
+        </ul>
+    </div>
+
+    <ul id="sources-list-3" class="sources-list">
+        <p class="sources-heading"><%= sources_fonts_headline %> </p>
+        <li><a href="https://fonts.google.com/specimen/Lato?query=lato" id="source-fonts-lato"><%= sources_fonts_lato %> </a></li>
+        <li><a href="https://fonts.google.com/specimen/Orbitron?query=orbitron" id="source-fonts-orbitron"><%= sources_fonts_orbitron %> </a></li>
+        <br>
+        <p class="sources-heading"><%= sources_icons_headline %></p>
+        <li><a href="https://fontawesome.com/search"><%= sources_icons_fontawsome %> </a></li>
+        <li><a href="https://www.flaticon.com/de/kostenlose-icons/ciudad-mitad-del-mundo" title="ciudad mitad del mundo Icons">FAVICON: Ciudad mitad del mundo Icons erstellt von Mayor Icons - Flaticon</a></li>
+        <br>
+        <p class="sources-heading"><%= sources_frameworks_headline %></p>
+        <li><a href="https://jquery.com">jQuery</a></li>
+        <li><a href="https://nodejs.org/en/">Nodejs</a></li>
+        <li><a href="https://expressjs.com">Express js</a></li>
+        <li></li>
+    </ul>
+    <!--skeleton-->
+    <div class="footer" id="sources-footer">
+        <p id="footer-text-1"><%= footer_text_1 %></p>
+
+        <div class="footer-ressources">
+            <a href="https://jquery.com" id="footer-res1">jQuery</a>
+            <a href="https://fontawesome.com" id="footer-res2">Font Awsome</a>
+            <a href="https://fonts.google.com" id="footer-res3">Google Fonts</a>
+            <a href="https://htmlcolorcodes.com/color-picker/" id="footer-res4">Color Picker</a>
+            <a href="https://stackoverflow.com" id="footer-res5">Stackoverflow</a>
+        </div>
+
+        <p id="footer-text-2">© Felix Hohmann, 2022</p>
+
+        <ul id="footer-langs">
+            <li><a href="/de/sources">Deutsch</a></li>
+            <li><a href="/en/sources">English</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>

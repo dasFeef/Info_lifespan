@@ -1,16 +1,17 @@
 {
     "sidebar_list_home": "HOME",
-    "sidebar_list_about": "ABOUT",
+    "sidebar_list_about": "ABOUT", 
+    "sidebar_list_github": "GITHUB",
+    "sidebar_list_sources": "SOURCES",
     "sidebar_list_inspiration": "INSPIRATION",
     "sidebar_list_motivation": "MOTIVATION",
     "sidebar_list_updates": "UPDATES",
-    "sidebar_list_sources": "SOURCES", 
 
     "index_aboutSection_headline" : "About this project:",
-    "index_aboutSection_text_1": "Wer billig kauft, kauft zweimal – bei keinem anderen Saatgut trifft das wohl so gut zu, wie bei der Kartoffel, schließlich stammen die Knollen von einer Mutterpflanze ab. War diese schon krank oder von Insekten befallen, ist es fast unausweichlich, dass ihr Sprössling auch betroffen ist. Oftmals reicht eine betroffene Knolle um einen Domino-Effekt auszulösen: Andere Pflanzen stecken sich ebenfalls an. Am Ende benötigt es viel Zeit und Geld, um das Feld vor dem Totalausfall zu bewahren. Stattdessen sollte man von Anfang an auf zertifiziertes Saatgut zurückgreifen. Dieses ist kontrolliert und auf jeden Fall seuchenfrei.",  
-    "index_aboutSection_text_2": "2", 
-    "index_aboutSection_text_3": "3", 
-    "index_aboutSection_text_4": "4", 
+    "index_aboutSection_text_1": "Your shipment arrives tomorrow. An appointment in six days. Next year I will be 50 years old. After retirement I will travel the world. Altough time is certainly the most valuable ressource we all own, most of the time, we look at time as this great ostacle, hindering us to move on. Before we know it, our most valuable asset looses its value. Therefore I think that from time to time one should step back to regain consciousness over time and its meaning. Your time is invaluable so use it!",  
+    "index_aboutSection_text_2": "Click on the menu icon at the top right and find 'home'. Clicking on home will start your adventure. You can toggle the websites brightness by clicking the switch on the top left.", 
+    "index_aboutSection_text_3": "Please note that all the calculations in 'home' are based on rough estimates and are not scientifically relevant. To find more information on your favourite topics, visit the 'sources' page using the navigation menu. The sources are in chronological order." , 
+    "index_aboutSection_text_4": "You can also choose your preffered language when clicking on it down at the bottom of any page. There you can also find a collectionm of awsome ressources thet were used whilst creating this site. I hope you like the it!", 
 
     "footer_text_1": "The following ressources were used while building this site:", 
 
@@ -18,26 +19,38 @@
 
     "home_data_desc_banana": "Bananas have been consumed since you visited this site! It is estimated, that 100 Billion bananas are consumed globally each year.", 
     "home_data_desc_trees": "Trees have been cut down since you visited this site! For every new tree that is plantet, another three trees have been harvested.", 
-    "home_data_desc_animals": "", 
+    "home_data_desc_searches": "Google searches were made since you visited this site! In a yoer more than 2 trillion searches are made.", 
     "home_data_desc_stars": "Thousand stars have become unable too reach for us - for ever. This is the case as the distance between them and us grows faster than the speed of light that no human will ever reach.", 
-    "home_data_desc_walking": "", 
+    "home_data_desc_walking": "Meters is the distance that you could have walked instead. Do better and complete your 12 thousand daily steps!", 
     "home_data_desc_lightspeed": "Million kilometers has light traveled since your adventure started! In one second, light could travel about eight times around the globe.", 
-    "home_data_desc_peopleBorn": "", 
-    "home_data_desc_peopleDied": "", 
-    "home_data_desc_earthsEnd": "", 
-    "home_data_desc_lifetime": "", 
-    "home_data_desc_houses": "", 
-    "home_data_desc_tweets": "", 
-    "home_data_desc_youtubeWatches": "", 
-    "home_data_desc_calls": "", 
-    "home_data_desc_reading": "", 
-    "home_data_desc_x1": "", 
-    "home_data_desc_x2": "",
-    "home_data_desc_x3": "", 
-    "home_data_desc_x4": "", 
-    "home_data_desc_x5": "", 
+    "home_data_desc_peopleBorn": "People were born just now. That is amazing. If you wondered, the '.5'-people will become individuals that prefer the light theme.", 
+    "home_data_desc_peopleDied": "People died just now. Whilst death is a sad thing to witness it remains neccesary for life to have meaning.", 
+    "home_data_desc_hheartbeats": "Times the heart of a hummingbird has beaten. The crazy thing is that their wings can flap 2-4 times faster", 
+    "home_data_desc_timeLost": "Seconds is percicely the time that you will gain back as you roamed around this website.", 
+    "home_data_desc_secondsLeft": "Billion seconds are left until the sun will have grown so big that all our precious water will be vaporized.", 
+    "home_data_desc_tweets": "Tweets have been sent out. At this rate of around 5000 tweets per second one can confidently say that no one has asked.", 
+    "home_data_desc_youtubeWatches": "Videos were watched on YouTube just now. This makes YouTube the second biggest search engine in the world.", 
+    "home_data_desc_earthTravels": "Kilometers has earth traveld relative to the sun.", 
+    "home_data_desc_reading": "Is the amount of pages from a useful book that you could've read rather then wasting your time.", 
+    "home_data_desc_blinking": "Times you have blinked so far and the coolest thing is that you didnt even notice.", 
+    "home_data_desc_pulse": "Times your heart has beaten. Let's hope this trend will continue...",
+    "home_data_desc_debt": "Euros have been added to germanys ever growing pile of debt.", 
+    "home_data_desc_strikes": "Lightnings have stricken the earth. It can safely be assumed that you were none hit you.", 
+    "home_data_desc_phones": "Iphones were just sold. That makes around 100 Million in total for 2022.", 
 
-    "home_data_text": "Check the sources page for mor information on these numbers!"
+    "home_data_text": "Check the sources page for more information on these numbers!", 
+
+
+    "sources_list_pictureText": "Click to find the image",
+    "sources_list_sourceText": "Click for more information", 
+    "sources_list_headline": "HOME:",
+    "sources_fonts_headline": "FONTS:",
+    "sources_icons_headline": "ICONS:",
+    "sources_frameworks_headline": "FRAMEWORKS:",
+
+    "sources_fonts_lato": "Click to find LATO",
+    "sources_fonts_orbitron": "Click to find ORBITRON",
+    "sources_icons_fontawsome": "fontawsome"
 
 
 

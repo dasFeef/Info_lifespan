@@ -1,5 +1,4 @@
 const countup = $("#home-timer-countup"); 
-
 let seconds = 0;
 let minutes = 0; 
 let hours = 0; 
@@ -47,9 +46,9 @@ let dataset = {
         value: 200, 
         res: (val) => {return val + 317}
     },
-    animals: {
+    searches: {
         value: 0, 
-        res: (val) => {return val + 1}
+        res: (val) => {return val + 99000}
     }, 
     stars: {
         value: 0, 
@@ -57,26 +56,81 @@ let dataset = {
     }, 
     walking: {
         value: 0, 
-        res: (val) => {return val + 1}
+        res: (val) => {return Math.round((val + 1.1)*100)/100}
     }, 
     lightspeed: {
         value: 0, 
         res: (val) => {
             return Math.round((val + 0.299792) * 100) / 100
         }
+    },
+    peopleBorn: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 4.5)*100)/100}
+    }, 
+    peopleDied: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 1.8)*100)/100}
+    }, 
+    hheartbeats: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 1.8)*100)/100}
+    }, 
+    timeLost: {
+        value: 0, 
+        res: (val) => {return val + 1}
+    }, 
+    secondsLeft: {
+        value: 39447000, 
+        res: (val) => {return val}
+    }, 
+    tweets: {
+        value: 0, 
+        res: (val) => {return val + 4973}
+    }, 
+    youtubeWatches: {
+        value: 0, 
+        res: (val) => {return val + 57870}
+    }, 
+    earthTravels: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 29.7)*100)/100}
+    },
+    reading: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 0.016)*100)/100}
+    }, 
+    blinking: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 0.29)*100)/100}
+    },
+    pulse: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 1.16)*100)/100}
+    },
+    debt: {
+        value: 0, 
+        res: (val) => {return val + 11240}
+    },
+    strikes: {
+        value: 0, 
+        res: (val) => {return val + 100}
+    },
+    phones: {
+        value: 0, 
+        res: (val) => {return Math.round((val + 3.2)*100) /100}
     }
-
-    
 }
 
 
 function updateData(){
-
     for(let i = 0; i < Object.keys(dataset).length; i++){
         dataset[Object.keys(dataset)[i]].value = dataset[Object.keys(dataset)[i]].res(dataset[Object.keys(dataset)[i]].value); 
+
         let value = dataset[Object.keys(dataset)[i]].value; 
         let stat = Object.keys(dataset)[i]; 
         let field = $(`#home-data-stat-${stat}`);
+
         field.text(()=>{return value})
     }
 
@@ -92,6 +146,7 @@ dataField.on("mouseenter", (e) => {
     let stat = e.target.attributes['data-stat'].value;
     let statValue = $(`#home-data-stat-${stat}`);
     let statDesc = $(`#home-data-desc-${stat}`);
+
     statValue.css("transform", "translateY(-9vh)"); 
 
     displayDesc = setTimeout(() => {
@@ -102,9 +157,11 @@ dataField.on("mouseenter", (e) => {
 
 dataField.on("mouseleave", (e) => {
     clearTimeout(displayDesc);
+
     let stat = e.target.attributes['data-stat'].value;
     let statValue = $(`#home-data-stat-${stat}`);
     let statDesc = $(`#home-data-desc-${stat}`);
+
     statDesc.removeClass("home-data-desc-show");
     statValue.css("transform", "translateY(0vh)");
 })

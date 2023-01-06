@@ -25,3 +25,11 @@ app.get(['/home', '/de/home'], (req, res) => {
 app.get(['/en/home'], (req, res) => {
     res.render('home', english)
 })
+
+app.get(['/sources', '/de/sources'], (req, res) => {
+    res.render('sources', german)
+})
+
+app.get(['/en/sources'], (req, res) => {
+    res.render('sources', english)
+})
