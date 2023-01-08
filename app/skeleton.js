@@ -56,6 +56,7 @@ navPaths.click((e) => {
 
 //make sure the language is set
 if(!lang) localStorage.setItem("system_lang", "de"), lang = "de";
+
 //rewrite url (if necessary) after initial page load
 if(!url.includes('/de') && !url.includes('/en')){
     window.location = `/${lang}/${site}`
