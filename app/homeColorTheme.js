@@ -17,6 +17,7 @@ toggleTheme();
 function toggleTheme(){
     if(theme == 'dark'){
         themeToggle.click(() => { 
+            themeToggle.off("click");
             theme = 'light';
             localStorage.setItem("view_brightness", theme);
 
@@ -29,7 +30,8 @@ function toggleTheme(){
         });
     }
     if(theme == 'light'){
-        themeToggle.click(() => {  
+        themeToggle.click(() => { 
+            themeToggle.off("click"); 
             theme = 'dark';
             localStorage.setItem("view_brightness", "dark");
             

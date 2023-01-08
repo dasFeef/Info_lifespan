@@ -41,26 +41,32 @@ function addSidebar(){
 }
 
 
-
+//URL rewrites
 const navPaths = $("#sidebar-list"); 
 const github = "https://github.com/dasFeef/Info_lifespan";
 let lang = localStorage.getItem("system_lang"); 
 let url = window.location.href; 
+let site = $("body").attr("name");
 
 navPaths.click((e) => {
-    let path = e.target.attributes['data-path'].value; 
-    
-    if(!lang) localStorage.setItem("system_lang", "de");
-    if(lang == 'de'){
-        if(!url.includes('/de')) window.location = `/de/${path}`;
-        if(path == 'github') window.location = github;
-        else window.location = path; 
-    }
+    site = e.target.attributes['data-path'].value;
+    if(site == 'github') return window.location = github;
+    return window.location = `${site}`;
+})
 
-    if(lang == 'en' || url.includes('/en')){  
-        localStorage.setItem("system_lang", "en") 
-        if(!url.includes('/en/')) window.location = `/en/${path}`;
-        if(path == 'github') window.location = github;
-        else window.location = path; 
+//make sure the language is set
+if(!lang) localStorage.setItem("system_lang", "de"), lang = "de";
+//rewrite url (if necessary) after initial page load
+if(!url.includes('/de') && !url.includes('/en')){
+    window.location = `/${lang}/${site}`
+}
+else{
+    if(url.includes('/de') && lang !== 'de'){
+        localStorage.setItem("system_lang", "de"), lang = "de";
+        window.location = window.location = `/${lang}/${site}`;
     }
-});
+    if(url.includes('/en') && lang !== 'en'){
+        localStorage.setItem("system_lang", "en"), lang = "en";
+        window.location = window.location = `/${lang}/${site}`;
+    }
+}
